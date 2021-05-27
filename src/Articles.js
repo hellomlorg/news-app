@@ -4,16 +4,14 @@ import React from "react";
 const ArticleItem = props => {
     const { article } = props;
     return(
-    <>
-     <h1>{article.title} </h1>
+    <div className="provider">
+     <h1>< a href={article.url}>{article.title}</a> </h1>
      <p style={{ margin: "20px 0" }}>
             {article.description}
-          </p>
-          <a href={article.url}>{article.source.name}</a>
-         
-         <p>{article.publishedAt.split("T")[0]}</p>
-        <img src={article.urlToImage} alt="hello friend" />
-        </>
+     </p>
+     <p>{article.publishedAt.split("T")[0]}</p>
+    <img className="picture" src={article.urlToImage} alt="" />
+    </div>
  );
 };
 

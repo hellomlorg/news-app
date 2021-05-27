@@ -2,7 +2,7 @@ import React from "react";
 import { getArticles } from "./api";
 import Articles from './Articles';
 import Searchbar from './Searchbar';
-//import './App.css';
+import './App.css';
 
 
 class App extends React.Component {
@@ -41,9 +41,7 @@ class App extends React.Component {
     
     return (
       <>
-       
-        
-        <Searchbar searchForTopic={this.searchForTopic} />
+       <Searchbar searchForTopic={this.searchForTopic} />
         
         {is_loading && (
           <p style={{ textAlign: "center" }}>Hold on a sec..Searching for articles...</p>
@@ -55,6 +53,7 @@ class App extends React.Component {
         )}
         {articles.length > 0 && <Articles articles={articles} />}
         {Error && <p>Couldn't find any articles on {Topic}</p>}
+        
         <footer className = "footerpart">
           Powered by <a href="https://newsapi.org/">NewsAPI.org</a>
         </footer>

@@ -23,8 +23,8 @@ class SearchBar extends React.Component {
     return (
       <div>
             
-              <form className ="searchbar" onSubmit={this.handleSubmit}>
-              <input
+              <form onSubmit={this.handleSubmit}>
+              <input  className ="searchbar"
                  autoFocus
                   value={this.state.Topic}
                  onChange={this.handleChange}/>
