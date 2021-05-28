@@ -33,3 +33,9 @@ npm start
 You can learn more about react from [reactjs.org](https://reactjs.org/).
 
 <a href="https://grammarly.go2cloud.org/aff_c?offer_id=3&aff_id=73274&file_id=1545" target="_blank"><img src="https://media.go2speed.org/brand/files/grammarly/3/future728x90.png" width="728" height="90" border="0" /></a><img src="https://grammarly.go2cloud.org/aff_i?offer_id=3&file_id=1545&aff_id=73274" width="0" height="0" style="position:absolute;visibility:hidden;" border="0" />
+
+## License
+This project is opensourced under the MIT License. 
+
+## Contributing Guidelines
+We welcome all kinds of PRs which improve this project. Make sure that you open an issue before you start contributing to it. 
