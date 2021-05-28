@@ -51,8 +51,9 @@ class App extends React.Component {
             Found {totalResults} articles on "{Topic}"
           </h2>
         )}
+        
         {articles.length > 0 && <Articles articles={articles} />}
-        {Error && <p>Couldn't find any articles on {Topic}</p>}
+        {Error && <p>Couldn't find any articles on {Topic} </p>}
         
         <footer className = "footerpart">
           Powered by <a href="https://newsapi.org/">NewsAPI.org</a>
